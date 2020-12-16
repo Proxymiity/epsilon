@@ -327,7 +327,7 @@ void AppsContainer::redrawWindow() {
 
 void AppsContainer::activateExamMode(GlobalPreferences::ExamMode examMode) {
   assert(examMode != GlobalPreferences::ExamMode::Off && examMode != GlobalPreferences::ExamMode::Unknown);
-  reset();
+  // reset();
   Ion::LED::setColor(ExamModeConfiguration::examModeColor(examMode));
   Ion::LED::setBlinking(1000, 0.1f);
 }
