@@ -362,7 +362,7 @@ void AppsContainer::activateExamMode(Poincare::Preferences::ExamMode examMode) {
       Ion::LED::setBlinking(1000, 0.1f);
     }
   } else {
-    Ion::Reset::core();
+    //Ion::Reset::core();
   }
 }
 
