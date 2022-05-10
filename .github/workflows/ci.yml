@@ -6,6 +6,7 @@ on:
   push:
     branches:
       - master
+  workflow_dispatch:
 
 env:
   MAKEFLAGS: ${{ (github.repository == 'numworks/epsilon-internal') && '-j32' || '-j2' }}
