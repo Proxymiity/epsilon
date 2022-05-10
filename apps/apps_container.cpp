@@ -355,7 +355,7 @@ void AppsContainer::redrawWindow() {
 void AppsContainer::activateExamMode(Poincare::Preferences::ExamMode examMode) {
   assert(examMode != Poincare::Preferences::ExamMode::Off && examMode != Poincare::Preferences::ExamMode::Unknown);
   if (Ion::Authentication::clearanceLevel() == Ion::Authentication::ClearanceLevel::NumWorks) {
-    reset();
+    //reset();
     KDColor color = ExamModeConfiguration::examModeColor(examMode);
     if (color != KDColorBlack) {
       Ion::LED::setColor(ExamModeConfiguration::examModeColor(examMode));
