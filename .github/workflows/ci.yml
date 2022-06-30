@@ -40,7 +40,7 @@ jobs:
         if: ${{ github.repository != 'numworks/epsilon-internal' }}
         with:
           name: epsilon-n0100.dfu
-          path: output/release/device/n0100/epsilon.dfu
+          path: output/release/device/n0100/*
   n0110:
     runs-on: ${{ (github.repository == 'numworks/epsilon-internal') && 'self-hosted' || 'ubuntu-latest'  }}
     steps:
@@ -62,7 +62,7 @@ jobs:
         if: ${{ github.repository != 'numworks/epsilon-internal' }}
         with:
           name: epsilon-n0110.dfu
-          path: output/release/device/n0110/epsilon.dfu
+          path: output/release/device/n0110/*
   windows:
     runs-on: windows-latest
     if: ${{ github.repository != 'numworks/epsilon-internal' }}
