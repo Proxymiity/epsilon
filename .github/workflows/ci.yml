@@ -39,7 +39,7 @@ jobs:
       - uses: actions/upload-artifact@master
         if: ${{ github.repository != 'numworks/epsilon-internal' }}
         with:
-          name: epsilon-n0100.dfu
+          name: n0100
           path: output/release/device/n0100/*
   n0110:
     runs-on: ${{ (github.repository == 'numworks/epsilon-internal') && 'self-hosted' || 'ubuntu-latest'  }}
@@ -61,7 +61,7 @@ jobs:
       - uses: actions/upload-artifact@master
         if: ${{ github.repository != 'numworks/epsilon-internal' }}
         with:
-          name: epsilon-n0110.dfu
+          name: n0110
           path: output/release/device/n0110/*
   windows:
     runs-on: windows-latest
